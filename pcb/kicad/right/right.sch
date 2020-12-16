@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:right-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F072CBTx U1
+L right-rescue:STM32F072CBTx-MCU_ST_STM32F0-left-rescue U1
 U 1 1 5DEC39DF
 P 6100 2700
 F 0 "U1" H 6050 1114 50  0000 C CNN
@@ -81,7 +80,7 @@ F 3 "~" H 8650 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
+L right-rescue:GND-power-left-rescue #PWR0101
 U 1 1 5DEC3EA3
 P 6000 4550
 F 0 "#PWR0101" H 6000 4300 50  0001 C CNN
@@ -149,7 +148,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 1200 7100 900 
 $Comp
-L power:GND #PWR0102
+L right-rescue:GND-power-left-rescue #PWR0102
 U 1 1 5DEC9602
 P 4950 600
 F 0 "#PWR0102" H 4950 350 50  0001 C CNN
@@ -182,7 +181,7 @@ F 3 "" H 4450 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0103
+L right-rescue:GND-power-left-rescue #PWR0103
 U 1 1 5DECA788
 P 4150 1000
 F 0 "#PWR0103" H 4150 750 50  0001 C CNN
@@ -227,7 +226,7 @@ F 3 "~" H 4450 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L right-rescue:GND-power-left-rescue #PWR0104
 U 1 1 5DECF310
 P 4450 1900
 F 0 "#PWR0104" H 4450 1650 50  0001 C CNN
@@ -243,7 +242,7 @@ Wire Wire Line
 	4450 1600 5400 1600
 Connection ~ 4450 1600
 $Comp
-L Regulator_Linear:MCP1703A-3302_SOT23 U2
+L right-rescue:MCP1703A-3302_SOT23-Regulator_Linear-left-rescue U2
 U 1 1 5DED53E7
 P 8250 900
 F 0 "U2" H 8250 1050 50  0000 C CNN
@@ -254,7 +253,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 8250 900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0105
+L right-rescue:GND-power-left-rescue #PWR0105
 U 1 1 5DEDB000
 P 10750 2400
 F 0 "#PWR0105" H 10750 2150 50  0001 C CNN
@@ -297,7 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 1100 9350 1200
 $Comp
-L power:GND #PWR0106
+L right-rescue:GND-power-left-rescue #PWR0106
 U 1 1 5DEE274F
 P 9250 1200
 F 0 "#PWR0106" H 9250 950 50  0001 C CNN
@@ -355,7 +354,7 @@ Wire Wire Line
 Text GLabel 4000 900  0    50   Input ~ 0
 3.3V
 $Comp
-L Diode:1N4148WS D11
+L right-rescue:1N4148WS-Diode-left-rescue D11
 U 1 1 5DF621C8
 P 1000 3350
 F 0 "D11" H 1000 3615 50  0000 C CNN
@@ -371,35 +370,35 @@ U 1 1 5DF621CF
 P 1350 3350
 F 0 "SW9" H 1350 3635 50  0000 C CNN
 F 1 "SW_Push" H 1350 3544 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 3550 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1350 3550 50  0001 C CNN
 F 3 "" H 1350 3550 50  0001 C CNN
 	1    1350 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D12
+L right-rescue:1N4148WS-Diode-left-rescue D12
 U 1 1 5DF621D6
-P 1000 3750
-F 0 "D12" H 1000 4015 50  0000 C CNN
-F 1 "D4.3" H 1000 3924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 3750 50  0001 C CNN
-F 3 "~" H 1000 3750 50  0001 C CNN
-	1    1000 3750
+P 1000 2050
+F 0 "D12" H 1000 2315 50  0000 C CNN
+F 1 "D4.3" H 1000 2224 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 2050 50  0001 C CNN
+F 3 "~" H 1000 2050 50  0001 C CNN
+	1    1000 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW10
 U 1 1 5DF621DD
-P 1350 3750
-F 0 "SW10" H 1350 4035 50  0000 C CNN
-F 1 "SW_Push" H 1350 3944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 3950 50  0001 C CNN
-F 3 "" H 1350 3950 50  0001 C CNN
-	1    1350 3750
+P 1350 2050
+F 0 "SW10" H 1350 2335 50  0000 C CNN
+F 1 "SW_Push" H 1350 2244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_2.75u_PCB" H 1350 2250 50  0001 C CNN
+F 3 "" H 1350 2250 50  0001 C CNN
+	1    1350 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D10
+L right-rescue:1N4148WS-Diode-left-rescue D10
 U 1 1 5DF621F2
 P 1000 2950
 F 0 "D10" H 1000 3215 50  0000 C CNN
@@ -415,13 +414,13 @@ U 1 1 5DF621F9
 P 1350 2950
 F 0 "SW8" H 1350 3235 50  0000 C CNN
 F 1 "SW_Push" H 1350 3144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 3150 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1350 3150 50  0001 C CNN
 F 3 "" H 1350 3150 50  0001 C CNN
 	1    1350 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D9
+L right-rescue:1N4148WS-Diode-left-rescue D9
 U 1 1 5DF62200
 P 1000 2550
 F 0 "D9" H 1000 2815 50  0000 C CNN
@@ -437,18 +436,18 @@ U 1 1 5DF62207
 P 1350 2550
 F 0 "SW7" H 1350 2835 50  0000 C CNN
 F 1 "SW_Push" H 1350 2744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 2750 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1350 2750 50  0001 C CNN
 F 3 "" H 1350 2750 50  0001 C CNN
 	1    1350 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 1550 2550 2    50   Input ~ 0
+Text GLabel 2900 2550 2    50   Input ~ 0
 COL3
 Text GLabel 850  2950 0    50   Input ~ 0
 ROW2
 Text GLabel 850  3350 0    50   Input ~ 0
 ROW3
-Text GLabel 850  3750 0    50   Input ~ 0
+Text GLabel 850  2050 0    50   Input ~ 0
 ROW4
 Text GLabel 850  2550 0    50   Input ~ 0
 ROW1
@@ -466,10 +465,9 @@ Wire Wire Line
 	1550 2950 1550 3350
 Connection ~ 1550 2950
 Wire Wire Line
-	1550 3350 1550 3750
-Connection ~ 1550 3350
+	1550 1650 1550 2050
 $Comp
-L Diode:1N4148WS D25
+L right-rescue:1N4148WS-Diode-left-rescue D25
 U 1 1 5DFE23D1
 P 2350 3350
 F 0 "D25" H 2350 3615 50  0000 C CNN
@@ -485,35 +483,35 @@ U 1 1 5DFE23D8
 P 2700 3350
 F 0 "SW23" H 2700 3635 50  0000 C CNN
 F 1 "SW_Push" H 2700 3544 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 3550 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 3550 50  0001 C CNN
 F 3 "" H 2700 3550 50  0001 C CNN
 	1    2700 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D26
+L right-rescue:1N4148WS-Diode-left-rescue D26
 U 1 1 5DFE23DF
-P 2350 3750
-F 0 "D26" H 2350 4015 50  0000 C CNN
-F 1 "D4.4" H 2350 3924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 3750 50  0001 C CNN
-F 3 "~" H 2350 3750 50  0001 C CNN
-	1    2350 3750
+P 2350 2050
+F 0 "D26" H 2350 2315 50  0000 C CNN
+F 1 "D4.4" H 2350 2224 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 2050 50  0001 C CNN
+F 3 "~" H 2350 2050 50  0001 C CNN
+	1    2350 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW24
 U 1 1 5DFE23E6
-P 2700 3750
-F 0 "SW24" H 2700 4035 50  0000 C CNN
-F 1 "SW_Push" H 2700 3944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 3950 50  0001 C CNN
-F 3 "" H 2700 3950 50  0001 C CNN
-	1    2700 3750
+P 2700 2050
+F 0 "SW24" H 2700 2335 50  0000 C CNN
+F 1 "SW_Push" H 2700 2244 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" H 2700 2250 50  0001 C CNN
+F 3 "" H 2700 2250 50  0001 C CNN
+	1    2700 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D24
+L right-rescue:1N4148WS-Diode-left-rescue D24
 U 1 1 5DFE23FB
 P 2350 2950
 F 0 "D24" H 2350 3215 50  0000 C CNN
@@ -529,13 +527,13 @@ U 1 1 5DFE2402
 P 2700 2950
 F 0 "SW22" H 2700 3235 50  0000 C CNN
 F 1 "SW_Push" H 2700 3144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 3150 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 3150 50  0001 C CNN
 F 3 "" H 2700 3150 50  0001 C CNN
 	1    2700 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D23
+L right-rescue:1N4148WS-Diode-left-rescue D23
 U 1 1 5DFE2409
 P 2350 2550
 F 0 "D23" H 2350 2815 50  0000 C CNN
@@ -551,18 +549,18 @@ U 1 1 5DFE2410
 P 2700 2550
 F 0 "SW21" H 2700 2835 50  0000 C CNN
 F 1 "SW_Push" H 2700 2744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 2750 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 2750 50  0001 C CNN
 F 3 "" H 2700 2750 50  0001 C CNN
 	1    2700 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 2550 2    50   Input ~ 0
+Text GLabel 1550 2550 2    50   Input ~ 0
 COL4
 Text GLabel 2200 2950 0    50   Input ~ 0
 ROW2
 Text GLabel 2200 3350 0    50   Input ~ 0
 ROW3
-Text GLabel 2200 3750 0    50   Input ~ 0
+Text GLabel 2200 2050 0    50   Input ~ 0
 ROW4
 Text GLabel 2200 2550 0    50   Input ~ 0
 ROW1
@@ -572,10 +570,9 @@ Wire Wire Line
 	2900 2950 2900 3350
 Connection ~ 2900 2950
 Wire Wire Line
-	2900 3350 2900 3750
-Connection ~ 2900 3350
+	2900 1650 2900 2050
 $Comp
-L Diode:1N4148WS D35
+L right-rescue:1N4148WS-Diode-left-rescue D35
 U 1 1 5DFE3E8A
 P 3700 3350
 F 0 "D35" H 3700 3615 50  0000 C CNN
@@ -591,35 +588,35 @@ U 1 1 5DFE3E91
 P 4050 3350
 F 0 "SW33" H 4050 3635 50  0000 C CNN
 F 1 "SW_Push" H 4050 3544 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 3550 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4050 3550 50  0001 C CNN
 F 3 "" H 4050 3550 50  0001 C CNN
 	1    4050 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D36
+L right-rescue:1N4148WS-Diode-left-rescue D36
 U 1 1 5DFE3E98
-P 3700 3750
-F 0 "D36" H 3700 4015 50  0000 C CNN
-F 1 "D4.5" H 3700 3924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 3750 50  0001 C CNN
-F 3 "~" H 3700 3750 50  0001 C CNN
-	1    3700 3750
+P 1000 3750
+F 0 "D36" H 1000 4015 50  0000 C CNN
+F 1 "D4.5" H 1000 3924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 3750 50  0001 C CNN
+F 3 "~" H 1000 3750 50  0001 C CNN
+	1    1000 3750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW34
 U 1 1 5DFE3E9F
-P 4050 3750
-F 0 "SW34" H 4050 4035 50  0000 C CNN
-F 1 "SW_Push" H 4050 3944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 3950 50  0001 C CNN
-F 3 "" H 4050 3950 50  0001 C CNN
-	1    4050 3750
+P 1350 3750
+F 0 "SW34" H 1350 4035 50  0000 C CNN
+F 1 "SW_Push" H 1350 3944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" H 1350 3950 50  0001 C CNN
+F 3 "" H 1350 3950 50  0001 C CNN
+	1    1350 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D34
+L right-rescue:1N4148WS-Diode-left-rescue D34
 U 1 1 5DFE3EB4
 P 3700 2950
 F 0 "D34" H 3700 3215 50  0000 C CNN
@@ -635,13 +632,13 @@ U 1 1 5DFE3EBB
 P 4050 2950
 F 0 "SW32" H 4050 3235 50  0000 C CNN
 F 1 "SW_Push" H 4050 3144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 3150 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4050 3150 50  0001 C CNN
 F 3 "" H 4050 3150 50  0001 C CNN
 	1    4050 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D33
+L right-rescue:1N4148WS-Diode-left-rescue D33
 U 1 1 5DFE3EC2
 P 3700 2550
 F 0 "D33" H 3700 2815 50  0000 C CNN
@@ -657,18 +654,18 @@ U 1 1 5DFE3EC9
 P 4050 2550
 F 0 "SW31" H 4050 2835 50  0000 C CNN
 F 1 "SW_Push" H 4050 2744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 2750 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 4050 2750 50  0001 C CNN
 F 3 "" H 4050 2750 50  0001 C CNN
 	1    4050 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 4250 2550 2    50   Input ~ 0
+Text GLabel 2900 850  2    50   Input ~ 0
 COL5
 Text GLabel 3550 2950 0    50   Input ~ 0
 ROW2
 Text GLabel 3550 3350 0    50   Input ~ 0
 ROW3
-Text GLabel 3550 3750 0    50   Input ~ 0
+Text GLabel 850  3750 0    50   Input ~ 0
 ROW4
 Text GLabel 3550 2550 0    50   Input ~ 0
 ROW1
@@ -678,10 +675,9 @@ Wire Wire Line
 	4250 2950 4250 3350
 Connection ~ 4250 2950
 Wire Wire Line
-	4250 3350 4250 3750
-Connection ~ 4250 3350
+	1550 3350 1550 3750
 $Comp
-L Diode:1N4148WS D7
+L right-rescue:1N4148WS-Diode-left-rescue D7
 U 1 1 5DFE6378
 P 1000 1650
 F 0 "D7" H 1000 1915 50  0000 C CNN
@@ -697,13 +693,13 @@ U 1 1 5DFE637F
 P 1350 1650
 F 0 "SW5" H 1350 1935 50  0000 C CNN
 F 1 "SW_Push" H 1350 1844 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 1850 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1350 1850 50  0001 C CNN
 F 3 "" H 1350 1850 50  0001 C CNN
 	1    1350 1650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D6
+L right-rescue:1N4148WS-Diode-left-rescue D6
 U 1 1 5DFE63A2
 P 1000 1250
 F 0 "D6" H 1000 1515 50  0000 C CNN
@@ -719,13 +715,13 @@ U 1 1 5DFE63A9
 P 1350 1250
 F 0 "SW4" H 1350 1535 50  0000 C CNN
 F 1 "SW_Push" H 1350 1444 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 1450 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1350 1450 50  0001 C CNN
 F 3 "" H 1350 1450 50  0001 C CNN
 	1    1350 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D5
+L right-rescue:1N4148WS-Diode-left-rescue D5
 U 1 1 5DFE63B0
 P 1000 850
 F 0 "D5" H 1000 1115 50  0000 C CNN
@@ -741,12 +737,12 @@ U 1 1 5DFE63B7
 P 1350 850
 F 0 "SW3" H 1350 1135 50  0000 C CNN
 F 1 "SW_Push" H 1350 1044 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 1050 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1350 1050 50  0001 C CNN
 F 3 "" H 1350 1050 50  0001 C CNN
 	1    1350 850 
 	1    0    0    -1  
 $EndComp
-Text GLabel 1550 850  2    50   Input ~ 0
+Text GLabel 1550 4500 2    50   Input ~ 0
 COL1
 Text GLabel 850  1250 0    50   Input ~ 0
 ROW2
@@ -760,7 +756,7 @@ Wire Wire Line
 	1550 1250 1550 1650
 Connection ~ 1550 1250
 $Comp
-L Diode:1N4148WS D21
+L right-rescue:1N4148WS-Diode-left-rescue D21
 U 1 1 5DFE63CB
 P 2350 1650
 F 0 "D21" H 2350 1915 50  0000 C CNN
@@ -776,13 +772,13 @@ U 1 1 5DFE63D2
 P 2700 1650
 F 0 "SW19" H 2700 1935 50  0000 C CNN
 F 1 "SW_Push" H 2700 1844 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 1850 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 1850 50  0001 C CNN
 F 3 "" H 2700 1850 50  0001 C CNN
 	1    2700 1650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D20
+L right-rescue:1N4148WS-Diode-left-rescue D20
 U 1 1 5DFE63F5
 P 2350 1250
 F 0 "D20" H 2350 1515 50  0000 C CNN
@@ -798,13 +794,13 @@ U 1 1 5DFE63FC
 P 2700 1250
 F 0 "SW18" H 2700 1535 50  0000 C CNN
 F 1 "SW_Push" H 2700 1444 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 1450 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 1450 50  0001 C CNN
 F 3 "" H 2700 1450 50  0001 C CNN
 	1    2700 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D19
+L right-rescue:1N4148WS-Diode-left-rescue D19
 U 1 1 5DFE6403
 P 2350 850
 F 0 "D19" H 2350 1115 50  0000 C CNN
@@ -820,12 +816,12 @@ U 1 1 5DFE640A
 P 2700 850
 F 0 "SW17" H 2700 1135 50  0000 C CNN
 F 1 "SW_Push" H 2700 1044 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 1050 50  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 2700 1050 50  0001 C CNN
 F 3 "" H 2700 1050 50  0001 C CNN
 	1    2700 850 
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 850  2    50   Input ~ 0
+Text GLabel 4250 2550 2    50   Input ~ 0
 COL2
 Text GLabel 2200 1250 0    50   Input ~ 0
 ROW2
@@ -839,122 +835,95 @@ Wire Wire Line
 	2900 1250 2900 1650
 Connection ~ 2900 1250
 $Comp
-L Diode:1N4148WS D16
+L right-rescue:1N4148WS-Diode-left-rescue D16
 U 1 1 5DFEF7D2
-P 950 5550
-F 0 "D16" H 950 5815 50  0000 C CNN
-F 1 "D3.6" H 950 5724 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 5550 50  0001 C CNN
-F 3 "~" H 950 5550 50  0001 C CNN
-	1    950  5550
+P 1000 5300
+F 0 "D16" H 1000 5565 50  0000 C CNN
+F 1 "D3.6" H 1000 5474 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 5300 50  0001 C CNN
+F 3 "~" H 1000 5300 50  0001 C CNN
+	1    1000 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW14
 U 1 1 5DFEF7D9
-P 1300 5550
-F 0 "SW14" H 1300 5835 50  0000 C CNN
-F 1 "SW_Push" H 1300 5744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 5750 50  0001 C CNN
-F 3 "" H 1300 5750 50  0001 C CNN
-	1    1300 5550
+P 1350 5300
+F 0 "SW14" H 1350 5585 50  0000 C CNN
+F 1 "SW_Push" H 1350 5494 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1350 5500 50  0001 C CNN
+F 3 "" H 1350 5500 50  0001 C CNN
+	1    1350 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D17
-U 1 1 5DFEF7E0
-P 950 5950
-F 0 "D17" H 950 6215 50  0000 C CNN
-F 1 "D4.6" H 950 6124 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 5950 50  0001 C CNN
-F 3 "~" H 950 5950 50  0001 C CNN
-	1    950  5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW15
-U 1 1 5DFEF7E7
-P 1300 5950
-F 0 "SW15" H 1300 6235 50  0000 C CNN
-F 1 "SW_Push" H 1300 6144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 6150 50  0001 C CNN
-F 3 "" H 1300 6150 50  0001 C CNN
-	1    1300 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D15
+L right-rescue:1N4148WS-Diode-left-rescue D15
 U 1 1 5DFEF7FC
-P 950 5150
-F 0 "D15" H 950 5415 50  0000 C CNN
-F 1 "D2.6" H 950 5324 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 5150 50  0001 C CNN
-F 3 "~" H 950 5150 50  0001 C CNN
-	1    950  5150
+P 1000 4900
+F 0 "D15" H 1000 5165 50  0000 C CNN
+F 1 "D2.6" H 1000 5074 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 4900 50  0001 C CNN
+F 3 "~" H 1000 4900 50  0001 C CNN
+	1    1000 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW13
 U 1 1 5DFEF803
-P 1300 5150
-F 0 "SW13" H 1300 5435 50  0000 C CNN
-F 1 "SW_Push" H 1300 5344 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 5350 50  0001 C CNN
-F 3 "" H 1300 5350 50  0001 C CNN
-	1    1300 5150
+P 1350 4900
+F 0 "SW13" H 1350 5185 50  0000 C CNN
+F 1 "SW_Push" H 1350 5094 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB" H 1350 5100 50  0001 C CNN
+F 3 "" H 1350 5100 50  0001 C CNN
+	1    1350 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D14
+L right-rescue:1N4148WS-Diode-left-rescue D14
 U 1 1 5DFEF80A
-P 950 4750
-F 0 "D14" H 950 5015 50  0000 C CNN
-F 1 "D1.6" H 950 4924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 4750 50  0001 C CNN
-F 3 "~" H 950 4750 50  0001 C CNN
-	1    950  4750
+P 1000 4500
+F 0 "D14" H 1000 4765 50  0000 C CNN
+F 1 "D1.6" H 1000 4674 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 4500 50  0001 C CNN
+F 3 "~" H 1000 4500 50  0001 C CNN
+	1    1000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW12
 U 1 1 5DFEF811
-P 1300 4750
-F 0 "SW12" H 1300 5035 50  0000 C CNN
-F 1 "SW_Push" H 1300 4944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 4950 50  0001 C CNN
-F 3 "" H 1300 4950 50  0001 C CNN
-	1    1300 4750
+P 1350 4500
+F 0 "SW12" H 1350 4785 50  0000 C CNN
+F 1 "SW_Push" H 1350 4694 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB" H 1350 4700 50  0001 C CNN
+F 3 "" H 1350 4700 50  0001 C CNN
+	1    1350 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 1500 4750 2    50   Input ~ 0
+Text GLabel 1550 850  2    50   Input ~ 0
 COL6
-Text GLabel 800  5150 0    50   Input ~ 0
+Text GLabel 850  4900 0    50   Input ~ 0
 ROW2
-Text GLabel 800  5550 0    50   Input ~ 0
+Text GLabel 850  5300 0    50   Input ~ 0
 ROW3
-Text GLabel 800  5950 0    50   Input ~ 0
-ROW4
-Text GLabel 800  4750 0    50   Input ~ 0
+Text GLabel 850  4500 0    50   Input ~ 0
 ROW1
 Wire Wire Line
-	1500 4750 1500 5150
+	1550 4500 1550 4900
 Wire Wire Line
-	1500 5150 1500 5550
-Connection ~ 1500 5150
-Wire Wire Line
-	1500 5550 1500 5950
-Connection ~ 1500 5550
-Text GLabel 6700 4000 2    50   Input ~ 0
-COL1
-Text GLabel 5400 2800 0    50   Input ~ 0
-COL2
-Text GLabel 5400 2900 0    50   Input ~ 0
-COL3
-Text GLabel 5400 3000 0    50   Input ~ 0
-COL4
-Text GLabel 5400 3300 0    50   Input ~ 0
-COL5
+	1550 4900 1550 5300
+Connection ~ 1550 4900
 Text GLabel 5400 3400 0    50   Input ~ 0
+COL1
+Text GLabel 5400 3300 0    50   Input ~ 0
+COL2
+Text GLabel 5400 3000 0    50   Input ~ 0
+COL3
+Text GLabel 5400 2900 0    50   Input ~ 0
+COL4
+Text GLabel 5400 2800 0    50   Input ~ 0
+COL5
+Text GLabel 6700 4000 2    50   Input ~ 0
 COL6
 Text GLabel 9300 900  1    50   Input ~ 0
 5V
@@ -981,7 +950,7 @@ Connection ~ 10750 2400
 Text GLabel 5900 1200 0    50   Input ~ 0
 VBAT
 $Comp
-L power:GND #PWR0107
+L right-rescue:GND-power-left-rescue #PWR0107
 U 1 1 5ED2E262
 P 8550 2250
 F 0 "#PWR0107" H 8550 2000 50  0001 C CNN
@@ -993,9 +962,9 @@ F 3 "" H 8550 2250 50  0001 C CNN
 $EndComp
 Text GLabel 8550 2150 0    50   Input ~ 0
 5V
-Text GLabel 8550 1950 0    50   Input ~ 0
-TX
 Text GLabel 8550 2050 0    50   Input ~ 0
+TX
+Text GLabel 8550 1950 0    50   Input ~ 0
 RX
 Text GLabel 6700 3400 2    50   Input ~ 0
 TX
@@ -1012,23 +981,6 @@ F 3 "~" H 8750 2150 50  0001 C CNN
 	1    8750 2150
 	1    0    0    1   
 $EndComp
-Text GLabel 7300 1800 0    50   Input ~ 0
-SWDIO
-Text GLabel 7300 1900 0    50   Input ~ 0
-SWDCLK
-Text GLabel 7300 1700 0    50   Input ~ 0
-3.3V
-$Comp
-L power:GND #PWR0108
-U 1 1 5ED50DF3
-P 7300 2000
-F 0 "#PWR0108" H 7300 1750 50  0001 C CNN
-F 1 "GND" V 7305 1872 50  0000 R CNN
-F 2 "" H 7300 2000 50  0001 C CNN
-F 3 "" H 7300 2000 50  0001 C CNN
-	1    7300 2000
-	0    1    1    0   
-$EndComp
 Text GLabel 6700 2900 2    50   Input ~ 0
 PA4
 Text GLabel 6700 3100 2    50   Input ~ 0
@@ -1039,44 +991,20 @@ Text GLabel 5400 3100 0    50   Input ~ 0
 PB6
 Text GLabel 5400 3200 0    50   Input ~ 0
 PB7
-$Comp
-L Connector:Conn_01x12_Male J3
-U 1 1 5EDBCB44
-P 7500 2200
-F 0 "J3" H 7473 2173 50  0000 R CNN
-F 1 "Conn_01x12_Male" H 7473 2082 50  0000 R CNN
-F 2 "kicad-harwin:Harwin_M20-89012xx_1x12_P2.54mm_Horizontal" H 7500 2200 50  0001 C CNN
-F 3 "~" H 7500 2200 50  0001 C CNN
-	1    7500 2200
-	-1   0    0    -1  
-$EndComp
-Text GLabel 7300 2600 0    50   Input ~ 0
-PB6
-Text GLabel 7300 2700 0    50   Input ~ 0
-PB7
-Text GLabel 7300 2800 0    50   Input ~ 0
-5V
-$Comp
-L power:GND #PWR0109
-U 1 1 5EDBE5BA
-P 7300 2500
-F 0 "#PWR0109" H 7300 2250 50  0001 C CNN
-F 1 "GND" V 7305 2372 50  0000 R CNN
-F 2 "" H 7300 2500 50  0001 C CNN
-F 3 "" H 7300 2500 50  0001 C CNN
-	1    7300 2500
-	0    1    1    0   
-$EndComp
-Text GLabel 7300 2100 0    50   Input ~ 0
-PA4
-Text GLabel 7300 2200 0    50   Input ~ 0
-PA5
-Text GLabel 7300 2300 0    50   Input ~ 0
-PA6
-Text GLabel 7300 2400 0    50   Input ~ 0
-PA7
 Text GLabel 6700 3000 2    50   Input ~ 0
 PA5
-Text GLabel 5400 3700 0    50   Input ~ 0
-3.3V
+$Comp
+L right-rescue:GND-power-left-rescue #PWR0110
+U 1 1 5F02320E
+P 5400 3700
+F 0 "#PWR0110" H 5400 3450 50  0001 C CNN
+F 1 "GND" V 5405 3572 50  0000 R CNN
+F 2 "" H 5400 3700 50  0001 C CNN
+F 3 "" H 5400 3700 50  0001 C CNN
+	1    5400 3700
+	0    1    1    0   
+$EndComp
+Connection ~ 1550 1650
+Connection ~ 2900 1650
+Connection ~ 1550 3350
 $EndSCHEMATC

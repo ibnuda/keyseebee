@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L left-rescue:STM32F072CBTx-MCU_ST_STM32F0-right-rescue U1
+L right-rescue:STM32F072CBTx-MCU_ST_STM32F0 U1
 U 1 1 5DEC39DF
 P 6100 2700
 F 0 "U1" H 6050 1114 50  0000 C CNN
@@ -80,7 +80,7 @@ F 3 "~" H 8650 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:GND-power-right-rescue #PWR0101
+L right-rescue:GND-power #PWR0101
 U 1 1 5DEC3EA3
 P 6000 4550
 F 0 "#PWR0101" H 6000 4300 50  0001 C CNN
@@ -148,7 +148,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 1200 7100 900 
 $Comp
-L left-rescue:GND-power-right-rescue #PWR0102
+L right-rescue:GND-power #PWR0102
 U 1 1 5DEC9602
 P 4950 600
 F 0 "#PWR0102" H 4950 350 50  0001 C CNN
@@ -181,7 +181,7 @@ F 3 "" H 4450 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L left-rescue:GND-power-right-rescue #PWR0103
+L right-rescue:GND-power #PWR0103
 U 1 1 5DECA788
 P 4150 1000
 F 0 "#PWR0103" H 4150 750 50  0001 C CNN
@@ -226,7 +226,7 @@ F 3 "~" H 4450 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:GND-power-right-rescue #PWR0104
+L right-rescue:GND-power #PWR0104
 U 1 1 5DECF310
 P 4450 1900
 F 0 "#PWR0104" H 4450 1650 50  0001 C CNN
@@ -242,7 +242,7 @@ Wire Wire Line
 	4450 1600 5400 1600
 Connection ~ 4450 1600
 $Comp
-L left-rescue:MCP1703A-3302_SOT23-Regulator_Linear-right-rescue U2
+L right-rescue:MCP1703A-3302_SOT23-Regulator_Linear U2
 U 1 1 5DED53E7
 P 8250 900
 F 0 "U2" H 8250 1050 50  0000 C CNN
@@ -253,7 +253,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 8250 900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L left-rescue:GND-power-right-rescue #PWR0105
+L right-rescue:GND-power #PWR0105
 U 1 1 5DEDB000
 P 10750 2400
 F 0 "#PWR0105" H 10750 2150 50  0001 C CNN
@@ -296,7 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	9350 1100 9350 1200
 $Comp
-L left-rescue:GND-power-right-rescue #PWR0106
+L right-rescue:GND-power #PWR0106
 U 1 1 5DEE274F
 P 9250 1200
 F 0 "#PWR0106" H 9250 950 50  0001 C CNN
@@ -354,7 +354,7 @@ Wire Wire Line
 Text GLabel 4000 900  0    50   Input ~ 0
 3.3V
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D11
+L right-rescue:1N4148WS-Diode D11
 U 1 1 5DF621C8
 P 1000 3350
 F 0 "D11" H 1000 3615 50  0000 C CNN
@@ -376,7 +376,7 @@ F 3 "" H 1350 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D12
+L right-rescue:1N4148WS-Diode D12
 U 1 1 5DF621D6
 P 1000 2050
 F 0 "D12" H 1000 2315 50  0000 C CNN
@@ -398,7 +398,7 @@ F 3 "" H 1350 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D10
+L right-rescue:1N4148WS-Diode D10
 U 1 1 5DF621F2
 P 1000 2950
 F 0 "D10" H 1000 3215 50  0000 C CNN
@@ -420,7 +420,7 @@ F 3 "" H 1350 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D9
+L right-rescue:1N4148WS-Diode D9
 U 1 1 5DF62200
 P 1000 2550
 F 0 "D9" H 1000 2815 50  0000 C CNN
@@ -467,7 +467,7 @@ Connection ~ 1550 2950
 Wire Wire Line
 	1550 1650 1550 2050
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D25
+L right-rescue:1N4148WS-Diode D25
 U 1 1 5DFE23D1
 P 2350 3350
 F 0 "D25" H 2350 3615 50  0000 C CNN
@@ -489,7 +489,7 @@ F 3 "" H 2700 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D24
+L right-rescue:1N4148WS-Diode D24
 U 1 1 5DFE23FB
 P 2350 2950
 F 0 "D24" H 2350 3215 50  0000 C CNN
@@ -511,7 +511,7 @@ F 3 "" H 2700 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D23
+L right-rescue:1N4148WS-Diode D23
 U 1 1 5DFE2409
 P 2350 2550
 F 0 "D23" H 2350 2815 50  0000 C CNN
@@ -546,7 +546,7 @@ Wire Wire Line
 	2900 2950 2900 3350
 Connection ~ 2900 2950
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D35
+L right-rescue:1N4148WS-Diode D35
 U 1 1 5DFE3E8A
 P 3700 3350
 F 0 "D35" H 3700 3615 50  0000 C CNN
@@ -568,7 +568,7 @@ F 3 "" H 4050 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D36
+L right-rescue:1N4148WS-Diode D36
 U 1 1 5DFE3E98
 P 1000 3750
 F 0 "D36" H 1000 4015 50  0000 C CNN
@@ -590,7 +590,7 @@ F 3 "" H 1350 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D34
+L right-rescue:1N4148WS-Diode D34
 U 1 1 5DFE3EB4
 P 3700 2950
 F 0 "D34" H 3700 3215 50  0000 C CNN
@@ -612,7 +612,7 @@ F 3 "" H 4050 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D33
+L right-rescue:1N4148WS-Diode D33
 U 1 1 5DFE3EC2
 P 3700 2550
 F 0 "D33" H 3700 2815 50  0000 C CNN
@@ -651,7 +651,7 @@ Connection ~ 4250 2950
 Wire Wire Line
 	1550 3350 1550 3750
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D7
+L right-rescue:1N4148WS-Diode D7
 U 1 1 5DFE6378
 P 1000 1650
 F 0 "D7" H 1000 1915 50  0000 C CNN
@@ -673,7 +673,7 @@ F 3 "" H 1350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D6
+L right-rescue:1N4148WS-Diode D6
 U 1 1 5DFE63A2
 P 1000 1250
 F 0 "D6" H 1000 1515 50  0000 C CNN
@@ -695,7 +695,7 @@ F 3 "" H 1350 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D5
+L right-rescue:1N4148WS-Diode D5
 U 1 1 5DFE63B0
 P 1000 850
 F 0 "D5" H 1000 1115 50  0000 C CNN
@@ -730,7 +730,7 @@ Wire Wire Line
 	1550 1250 1550 1650
 Connection ~ 1550 1250
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D21
+L right-rescue:1N4148WS-Diode D21
 U 1 1 5DFE63CB
 P 2350 1650
 F 0 "D21" H 2350 1915 50  0000 C CNN
@@ -752,7 +752,7 @@ F 3 "" H 2700 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D20
+L right-rescue:1N4148WS-Diode D20
 U 1 1 5DFE63F5
 P 2350 1250
 F 0 "D20" H 2350 1515 50  0000 C CNN
@@ -774,7 +774,7 @@ F 3 "" H 2700 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D19
+L right-rescue:1N4148WS-Diode D19
 U 1 1 5DFE6403
 P 2350 850
 F 0 "D19" H 2350 1115 50  0000 C CNN
@@ -809,7 +809,7 @@ Wire Wire Line
 	2900 1250 2900 1650
 Connection ~ 2900 1250
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D16
+L right-rescue:1N4148WS-Diode D16
 U 1 1 5DFEF7D2
 P 950 5550
 F 0 "D16" H 950 5815 50  0000 C CNN
@@ -831,7 +831,7 @@ F 3 "" H 1300 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D15
+L right-rescue:1N4148WS-Diode D15
 U 1 1 5DFEF7FC
 P 950 5150
 F 0 "D15" H 950 5415 50  0000 C CNN
@@ -853,7 +853,7 @@ F 3 "" H 1300 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D14
+L right-rescue:1N4148WS-Diode D14
 U 1 1 5DFEF80A
 P 950 4750
 F 0 "D14" H 950 5015 50  0000 C CNN
@@ -924,7 +924,7 @@ Connection ~ 10750 2400
 Text GLabel 5900 1200 0    50   Input ~ 0
 VBAT
 $Comp
-L left-rescue:GND-power-right-rescue #PWR0107
+L right-rescue:GND-power #PWR0107
 U 1 1 5ED2E262
 P 8550 2250
 F 0 "#PWR0107" H 8550 2000 50  0001 C CNN
@@ -986,7 +986,7 @@ F 3 "" H 2700 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L left-rescue:1N4148WS-Diode-right-rescue D26
+L right-rescue:1N4148WS-Diode D26
 U 1 1 5DFE23DF
 P 2350 2050
 F 0 "D26" H 2350 2315 50  0000 C CNN
